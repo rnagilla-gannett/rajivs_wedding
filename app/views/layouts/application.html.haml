@@ -1,7 +1,7 @@
 !!!DOCTYPE 5
 %html
   %head
-    %title The Wedding of Ashley Hill &amp; Chris Neitzer
+    %title The Wedding of Swathi &amp; Rajiv
     =stylesheet_link_tag    "application", :media => "all"
     =stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise", media: "all"
     =javascript_include_tag "application"
@@ -15,24 +15,26 @@
               %li
                 =link_to "Home", root_path
               %li
-                =link_to "Wedding", wedding_path
+                =link_to "Our Story", wedding_path
               %li
-                =link_to "Hotel Info", hotel_info_path
+                =link_to "Venue", hotel_info_path
               %li
-                =link_to "Registry", registry_path
+                =link_to "Gallery ", registry_path
               %li
-                =link_to "At Home", at_home_path
+                =link_to "Guest Book", at_home_path
           %div{style: "clear: right;"}
           %header#main-heading
             %div
               %h1
-                Ashley Hill
+                Swathi
                 %br
                 &amp;
                 %br
-                Chris Neitzer
+                Rajiv
                 %br
                 are getting married!
           #content
             .box
               =yield
+      <audio controls="controls" autoplay="autoplay"> <source src="http://traffic.libsyn.com/rubyrogues/RubyRogues20110914.mp3" type="audio/mp3" autoplay=true></audio>
+      / <object height="100" width="100" data="http://traffic.libsyn.com/rubyrogues/RubyRogues20110914.mp3"></object>
