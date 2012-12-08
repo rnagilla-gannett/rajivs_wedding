@@ -1,0 +1,14 @@
+%h1
+	New Message
+
+	= render :partial => 'form'
+%p
+	= link_to 'Back', comments_path
+
+%p
+	.box
+		- @comments.each do |comment|
+			= comment.name
+			= comment.email
+			= comment.message
+			%br

@@ -6,6 +6,7 @@
     =stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise", media: "all"
     =javascript_include_tag "application"
     =csrf_meta_tags
+  / <audio controls="controls" autoplay="autoplay" style:"position:left;"> <source src="http://traffic.libsyn.com/rubyrogues/RubyRogues20110914.mp3" type="audio/mp3" autoplay=true></audio>
   %body
     .container
       .row
@@ -36,5 +37,4 @@
           #content
             .box
               =yield
-      <audio controls="controls" autoplay="autoplay"> <source src="http://traffic.libsyn.com/rubyrogues/RubyRogues20110914.mp3" type="audio/mp3" autoplay=true></audio>
       / <object height="100" width="100" data="http://traffic.libsyn.com/rubyrogues/RubyRogues20110914.mp3"></object>

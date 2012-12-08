@@ -1,9 +1,11 @@
 Wedding::Application.routes.draw do
+  resources :comments
+
   get "home/index"
 
   match "wedding" => "wedding#index"
 
-  match "at_home" => "at_home#index"
+  match "at_home" => "comments#new"
 
   match "registry" => "registry#index"
 

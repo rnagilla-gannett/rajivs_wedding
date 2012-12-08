@@ -1,0 +1,6 @@
+= simple_form_for (@comment) do |f|
+ = f.input :name
+ = f.input :email
+ = f.input :message, :input_html => {:style => "height: 60px;width:420px;"}
+
+ = f.button :submit
