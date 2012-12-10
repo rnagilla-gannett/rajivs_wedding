@@ -2,13 +2,20 @@
 	New Message
 
 	= render :partial => 'form'
-%p
-	= link_to 'Back', comments_path
+%br
 
 %p
-	.box
+	.box2
+		%h3
+			Guest Comments
 		- @comments.each do |comment|
-			= comment.name
-			= comment.email
+			%p
 			= comment.message
+			%br
+			&#8722;
+			= comment.name
+			on
+			= comment.created_at.localtime.strftime("%m/%d/%Y %H:%m:%S")
+			%br
+			****************************************
 			%br

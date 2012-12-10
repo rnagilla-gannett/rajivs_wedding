@@ -3,13 +3,13 @@ Wedding::Application.routes.draw do
 
   get "home/index"
 
-  match "wedding" => "wedding#index"
+  match "story" => "wedding#index"
 
-  match "at_home" => "comments#new"
+  match "guest_book" => "comments#new"
 
-  match "registry" => "registry#index"
+  match "gallery" => "registry#index"
 
-  match "hotel_info" => "hotel_info#index"
+  match "venue" => "hotel_info#index"
 
   get "location/index"
 
