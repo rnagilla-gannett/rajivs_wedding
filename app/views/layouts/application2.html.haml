@@ -1,0 +1,41 @@
+!!!DOCTYPE 5
+%html
+  %head
+    %title The Wedding of Swathi &amp; Rajiv
+    =stylesheet_link_tag    "application", :media => "all"
+    =stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise", media: "all"
+    =javascript_include_tag "application"
+    =csrf_meta_tags
+  / <audio controls="controls" autoplay="autoplay" style:"position:left;"> <source src="http://traffic.libsyn.com/rubyrogues/RubyRogues20110914.mp3" type="audio/mp3" autoplay=true></audio>
+  %body
+    .container
+      .row
+        .offset2.span8
+          %nav.pull-right
+            %ul.nav-pills.nav
+              %li
+                =link_to "Home", root_path
+              %li
+                =link_to "Our Story", story_path
+              %li
+                =link_to "Venue", venue_path
+              %li
+                =link_to "Gallery ", gallery_path
+              %li
+                =link_to "Guest Book", guest_book_path
+          %div{style: "clear: right;"}
+          %header#main-heading
+            %div
+              %h1
+                Swathi
+                %br
+                &amp;
+                %br
+                Rajiv
+                %br
+                are getting married on December 16th!
+                %br
+          #content
+            .box3
+              =yield
+      / <object height="100" width="100" data="http://traffic.libsyn.com/rubyrogues/RubyRogues20110914.mp3"></object>
