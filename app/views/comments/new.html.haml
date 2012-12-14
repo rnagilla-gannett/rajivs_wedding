@@ -9,13 +9,12 @@
 		%h3
 			Guest Comments
 		- @comments.each do |comment|
-			%p
-			= comment.message
-			%br
-			&#8722;
-			= comment.name
-			on
-			= comment.created_at.localtime.strftime("%m/%d/%Y %H:%m:%S")
-			%br
-			****************************************
-			%br
+			.message_box
+				%p
+				= comment.message
+				%br
+				&#8722;
+				= comment.name
+				on
+				= comment.created_at.localtime.strftime("%m/%d/%Y")
+				%br
